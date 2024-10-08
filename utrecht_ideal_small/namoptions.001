@@ -1,0 +1,105 @@
+&RUN
+iexpnr     =  001
+runtime    =  28800
+dtmax      =  1
+ladaptive  =  .true.
+irandom    =  43
+randthl    =  0.2
+randqt     =  1e-5
+nsv        = 2
+nprocx     = 8
+nprocy     = 8
+/
+&DOMAIN
+itot       =  128
+jtot       =  128
+kmax       =  192
+xsize      =  640.
+ysize      =  640.
+xlat       =  52.
+xlon       =  5.2
+/
+&PHYSICS
+ltimedep   =  .true.
+ps         =  101609.00
+thls       =  288.18
+lmoist     =  .false.
+lcoriol    =  .true.
+iradiation = 0
+z0         = 0.1
+/
+&NAMSURFACE
+wtsurf     = 0.0 
+wqsurf     = 0e-5
+isurf      = 2
+lmostlocal = .true.
+lwsv_sfc_flux_hetero = .true.
+/
+&DYNAMICS
+lqlnr      =  .true.
+cu         =  0
+cv         =  0.
+iadv_mom    =  2
+iadv_tke    =  7
+iadv_thl    =  7
+iadv_qt     =  7
+iadv_sv     =  7 7 7 7
+ibas_prf    = 2
+/
+&NAMSUBGRID
+lsmagorinsky     = .true.
+lmason = .true.
+ldelta = .true.
+/
+&NAMCHECKSIM
+tcheck      = 60
+/
+&NAMTIMESTAT
+ltimestat   = .true.
+dtav        = 60
+/
+&NAMGENSTAT
+lstat       = .true.
+dtav        = 60
+timeav      = 600
+/
+&NAMBUDGET
+lbudget     = .true.
+dtav        = 60
+timeav      = 600
+/
+&
+&NAMSAMPLING
+dtav = 60
+timeav = 600.
+lsampibm = .true.
+/
+&NAMIBM
+lapply_ibm = .true.
+lreadfile_obstacles = .true.
+lwallheat = .true.
+thlibm = 288.18
+thlwall = 288.18
+thlroof = 288.18
+qtibm   = 0.000
+z0m_wall = 0.1
+/
+&NAMFIELDDUMP
+ DTAV        =  3600
+ LFIELDDUMP  = .true.
+ LDIRACC     = .true.
+ LBINARY     = .false.
+ KLOW        = 1
+ KHIGH       = 30
+/
+&NAMCROSSSECTION
+lcross  = .true.
+dtav    = 1800 
+crossheight = 1 2 3 4 5
+lbinary = .false.
+/
+&NUDGEBOUNDARY
+lnudgeboundary = .true.
+nudgedepthgr = 6
+/
+

@@ -1,0 +1,9 @@
+This folder contains two different surface files for tracer release:
+wsv.inp.001
+and 
+_norelease_wsv.inp.001
+
+As the name gives away, the 2nd file has a release of zero everywhere.
+This was originally meant to first simulate XXX number of hours with no release and only later (after spinup) switch on the release in the simulation..
+
+For now: restarting the simulation (with different conditions) might be a bit challenging from the start. So, we can discuss that later.
