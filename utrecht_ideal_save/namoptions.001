@@ -55,11 +55,13 @@ ldelta = .true.
 tcheck      = 60
 /
 &NAMTIMESTAT
-ltimestat   = .true.
+ltimestat   = .false.
 dtav        = 60
 /
 &NAMGENSTAT
-lstat       = .false.
+lstat       = .true.
+dtav        = 7200
+timeav      = 7200
 
 &NAMGENSTATLITE
 lstat       = .true.
@@ -67,13 +69,13 @@ timeav      = 20
 /
 &NAMBUDGET
 lbudget     = .true.
-dtav        = 60
-timeav      = 600
+dtav        = 600
+timeav      = 3600
 /
 &
 &NAMSAMPLING
-dtav = 60
-timeav = 600.
+dtav        = 600
+timeav      = 3600
 lsampibm = .true.
 /
 &NAMIBM
