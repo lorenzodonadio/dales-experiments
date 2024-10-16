@@ -7,8 +7,8 @@ irandom    =  43
 randthl    =  0.2
 randqt     =  1e-5
 nsv        = 0
-nprocx     = 4
-nprocy     = 4
+nprocx     = 1
+nprocy     = 1
 /
 &DOMAIN
 itot       =  128
@@ -62,7 +62,7 @@ dtav        = 60
 lstat       = .true.
 dtav        = 7200
 timeav      = 7200
-
+/
 &NAMGENSTATLITE
 lstat       = .true.
 timeav      = 20
