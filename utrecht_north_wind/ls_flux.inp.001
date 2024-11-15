@@ -1,0 +1,5 @@
+EXPERIMENT: utrecht_lorenzo_v
+       time      wtsurf      wqsurf    thls      qts   psurf
+       [s]     [K m/s]    [kg m/s]     [K]      [kg/kg]   [Pa]
+   0.000  -9.000  -9.000 295.100  -9.000101618.000
+14400.000  -9.000  -9.000 293.800  -9.000101618.000
