@@ -7,17 +7,17 @@ irandom    =  43
 randthl    =  0.2
 randqt     =  1e-5
 nsv        = 0
-nprocx     = 1
-nprocy     = 1
+nprocx     = 4
+nprocy     = 4
 /
 &DOMAIN
-itot       =  128
-jtot       =  128
-kmax       =  192
-xsize      =  640.
-ysize      =  640.
-xlat       =  52.
-xlon       =  5.2
+itot       =  256
+jtot       =  256
+kmax       =  256
+xsize      =  256.
+ysize      =  256.
+xlat       =  40.
+xlon       =  110
 /
 &PHYSICS
 ltimedep   =  .true.
@@ -47,7 +47,7 @@ iadv_sv     =  7 7 7 7
 ibas_prf    = 2
 /
 &NAMSUBGRID
-lsmagorinsky     = .true.
+lsmagorinsky = .true.
 lmason = .true.
 ldelta = .true.
 /
