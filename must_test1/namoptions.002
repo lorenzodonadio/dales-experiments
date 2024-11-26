@@ -1,6 +1,6 @@
 &RUN
-iexpnr     =  001
-runtime    =  25
+iexpnr     =  002
+runtime    =  1800
 dtmax      =  1
 ladaptive  =  .true.
 irandom    =  43
@@ -66,7 +66,7 @@ timeav      = 7200
 /
 &NAMGENSTATLITE
 lstat       = .true.
-timeav      = 20
+timeav      = 30
 /
 &NAMBUDGET
 lbudget     = .true.
@@ -90,12 +90,12 @@ qtibm   = 0.000
 z0m_wall = 0.1
 /
 &NAMFIELDDUMP
- DTAV        =  20
+ DTAV        =  30
  LFIELDDUMP  = .true.
  LDIRACC     = .true.
  LBINARY     = .false.
  KLOW        = 1
- KHIGH       = 20
+ KHIGH       = 40
  lekh        = .true.
  lqt         = .false.        
  lql         = .false.        
