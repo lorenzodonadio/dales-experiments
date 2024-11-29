@@ -33,7 +33,7 @@ z0         = 0.1
 wtsurf     = 0.0 
 wqsurf     = 0e-5
 isurf      = 2
-lmostlocal = .true.
+lmostlocal = .false.
 lwsv_sfc_flux_hetero = .true.
 /
 &DYNAMICS
@@ -66,7 +66,7 @@ timeav      = 7200
 /
 &NAMGENSTATLITE
 lstat       = .true.
-timeav      = 20
+timeav      = 10
 /
 &NAMBUDGET
 lbudget     = .true.
@@ -83,19 +83,19 @@ lsampibm = .true.
 lapply_ibm = .true.
 lreadfile_obstacles = .true.
 lwallheat = .true.
-thlibm = 288.18
-thlwall = 288.18
-thlroof = 288.18
+thlibm = 298.18
+thlwall = 298.18
+thlroof = 298.18
 qtibm   = 0.000
 z0m_wall = 0.1
 /
 &NAMFIELDDUMP
- DTAV        =  20
+ DTAV        =  10
  LFIELDDUMP  = .true.
  LDIRACC     = .true.
  LBINARY     = .false.
  KLOW        = 1
- KHIGH       = 20
+ KHIGH       = 30
  lekh        = .true.
  lqt         = .false.        
  lql         = .false.        
@@ -112,4 +112,3 @@ lbinary = .false.
 lnudgeboundary = .true.
 nudgedepthgr = 6
 /
-
