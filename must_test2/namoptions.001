@@ -1,14 +1,14 @@
 &RUN
 iexpnr     =  001
-runtime    =  7200
+runtime    =  4800
 dtmax      =  1
 ladaptive  =  .true.
 irandom    =  43
 randthl    =  0.2
 randqt     =  1e-5
 nsv        = 0
-nprocx     = 4
-nprocy     = 4
+nprocx     = 8
+nprocy     = 8
 /
 &DOMAIN
 itot       =  256

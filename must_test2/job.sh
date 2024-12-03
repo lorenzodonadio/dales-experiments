@@ -4,9 +4,9 @@
 #SBATCH --partition=compute-p2
 #SBATCH --account=innovation
 #SBATCH --time=12:00:00
-#SBATCH --ntasks=16
+#SBATCH --ntasks=64
 #SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=4G
+#SBATCH --mem-per-cpu=2G
 #SBATCH --output=%j.out
 #SBATCH --error=%j.err
 
