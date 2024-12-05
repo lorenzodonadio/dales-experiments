@@ -1,13 +1,13 @@
 &RUN
 iexpnr     =  001
-runtime    =  4800
+runtime    =  120
 dtmax      =  1
 ladaptive  =  .true.
 irandom    =  43
 randthl    =  0.2
 randqt     =  1e-5
 nsv        = 0
-nprocx     = 8
+nprocx     = 4
 nprocy     = 8
 /
 &DOMAIN
@@ -66,7 +66,7 @@ timeav      = 7200
 /
 &NAMGENSTATLITE
 lstat       = .true.
-timeav      = 10
+timeav      = 1
 /
 &NAMBUDGET
 lbudget     = .true.
@@ -83,19 +83,19 @@ lsampibm = .true.
 lapply_ibm = .true.
 lreadfile_obstacles = .true.
 lwallheat = .true.
-thlibm = 298.18
-thlwall = 298.18
-thlroof = 298.18
+thlibm = 293.18
+thlwall = 293.18
+thlroof = 293.18
 qtibm   = 0.000
 z0m_wall = 0.1
 /
 &NAMFIELDDUMP
- DTAV        =  10
+ DTAV        =  1
  LFIELDDUMP  = .true.
  LDIRACC     = .true.
  LBINARY     = .false.
  KLOW        = 1
- KHIGH       = 30
+ KHIGH       = 40
  lekh        = .true.
  lqt         = .false.        
  lql         = .false.        
