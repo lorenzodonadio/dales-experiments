@@ -23,7 +23,7 @@ xlon       =  110
 &PHYSICS
 ltimedep   =  .true.
 ps         =  101609.00
-thls       =  298.18
+thls       =  293.18
 lmoist     =  .false.
 lcoriol    =  .true.
 iradiation = 0
