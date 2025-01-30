@@ -7,8 +7,8 @@ irandom    =  43
 randthl    =  0.2
 randqt     =  1e-5
 nsv        = 0
-nprocx     = 4
-nprocy     = 8
+nprocx     = 2
+nprocy     = 2
 /
 &DOMAIN
 itot       =  256
@@ -66,7 +66,7 @@ timeav      = 7200
 /
 &NAMGENSTATLITE
 lstat       = .true.
-timeav      = 10
+timeav      = 2
 /
 &NAMBUDGET
 lbudget     = .true.
@@ -90,8 +90,9 @@ qtibm   = 0.000
 z0m_wall = 0.1
 /
 &NAMFIELDDUMP
- DTAV        =  10
+ DTAV        =  2
  LFIELDDUMP  = .true.
+ LSAVETIMEAVG = .true.
  LDIRACC     = .true.
  LBINARY     = .false.
  KLOW        = 1
