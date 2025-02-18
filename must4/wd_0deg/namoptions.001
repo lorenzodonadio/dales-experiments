@@ -1,6 +1,6 @@
 &RUN
 iexpnr     =  001
-runtime    =  800
+runtime    =  900
 dtmax      =  1
 ladaptive  =  .true.
 irandom    =  43

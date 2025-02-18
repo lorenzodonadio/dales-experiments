@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#SBATCH --job-name=must_test3
+#SBATCH --job-name=180deg
 #SBATCH --partition=compute-p2
 #SBATCH --account=innovation
 #SBATCH --time=16:00:00
@@ -12,7 +12,7 @@
 
 # Experiment new module set by Fredrik Jansson (see https://github.com/dalesteam/dales/wiki/Installation-on-DelftBlue)
 
-module load 2023r1-gcc11
+module load 2024r1
 module load openmpi/4.1.4
 module load cmake/3.24.3
 module load netcdf-fortran/4.6.0
