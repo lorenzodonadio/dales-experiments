@@ -13,10 +13,10 @@
 # Experiment new module set by Fredrik Jansson (see https://github.com/dalesteam/dales/wiki/Installation-on-DelftBlue)
 
 module load 2024r1
-module load openmpi/4.1.4
-module load cmake/3.24.3
-module load netcdf-fortran/4.6.0
-module load fftw/3.3.10
+module load openmpi/4.1.6
+module load cmake/3.27.7
+module load netcdf-fortran/4.6.1
+module load fftw/3.3.10_openmp_True
 
 export SYST=gnu-fast
 
